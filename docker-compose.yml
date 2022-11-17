@@ -1,7 +1,9 @@
 services:
-    hello-world:
-        build: 
-            context: ./
-            dockerfile: Dockerfile
+    openjdk:
+        container_name: openjdk
+        image: openjdk:latest
         ports:
             - 8080:8080
+        volumes:
+            - ./target:/target
+        command: bash -c "java -jar /target/demo-0.0.1-SNAPSHOT.jar"

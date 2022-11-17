@@ -1,4 +1,4 @@
-package com.dockerforjavadevelopers.hello;
+package com.example.demo;
 
 
 import org.springframework.web.bind.annotation.RestController;
@@ -9,7 +9,7 @@ public class HelloController {
     
     @RequestMapping("/")
     public String index() {
-        return "Hello World 7\n";
+        return "Hello World 17\n";
     }
     
 }
